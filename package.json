@@ -1,0 +1,27 @@
+{
+  "name": "@larouges/tabs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaRouges/Tabs.git"
+  },
+  "author": "vagusX <vagusxl@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "npm run lint",
+    "lint": "eslint src/*",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "husky": "^0.13.3",
+    "semantic-release": "^6.3.6",
+    "validate-commit-msg": "^2.12.1"
+  }
+}
